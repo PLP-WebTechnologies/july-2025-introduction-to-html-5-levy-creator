@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Page with Forms</title>
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Welcome to My  Page</h1>
+        <p>This page demonstrates <strong>lists</strong>, <strong>tables</strong>, <strong>media</strong>, and a complete HTML5 form.</p>
+    </header>
+
+    <!-- LIST SECTION -->
+    <section>
+        <h2>My Web Development Topics</h2>
+        <ul>
+            <li>HTML5 Semantic Tags</li>
+            <li>CSS Styling and Layout</li>
+            <li>JavaScript Interactivity</li>
+            <li>Responsive Web Design</li>
+        </ul>
+    </section>
+
+    <!-- TABLE SECTION -->
+    <section>
+        <h2>Sample HTML5 Elements Overview</h2>
+            <thead>
+                <tr>
+                    <th>Element</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>Creates an unordered list.</td>
+                    <td>• Item 1</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Displays data in rows and columns.</td>
+                    <td>2 x 2 table</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>Embeds a video on the page.</td>
+                    <td>Sample MP4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- MEDIA SECTION -->
+    <section>
+        <h2>Embedded Media</h2>
+        <p>Here’s an example of an embedded image and a video:</p>
+        <img src="https://via.placeholder.com/400x200" alt="Sample Image" width="400">
+        <video width="400" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section>
+        <h2>HTML5 Contact Form</h2>
+        <form action="#" method="post">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required>
+            </fieldset>
+
+            <!-- Preferences -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="topic">Favorite Web Topic:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">--Select a topic--</option>
+                    <option value="html">HTML5</option>
+                    <option value="css">CSS3</option>
+                    <option value="js">JavaScript</option>
+                </select>
+
+                <p>Subscribe to newsletter:</p>
+                <input type="radio" id="yes" name="subscribe" value="yes" required>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="subscribe" value="no">
+                <label for="no">No</label>
+            </fieldset>
+
+            <!-- Message -->
+            <fieldset>
+                <legend>Your Message</legend>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 My Web Development Page</p>
+    </footer>
+
+</body>
+</html>
